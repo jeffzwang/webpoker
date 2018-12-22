@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Deck from "react-poker";
-import "./index.css";
+import "./index.scss";
 
 const range = (start, count) =>
   Array.apply(0, Array(count)).map((element, index) => {
@@ -107,9 +107,9 @@ class App extends Component {
         </button>
         <Deck
           board={board}
-          boardXoffset={275} // X axis pixel offset for dealing board
-          boardYoffset={200} // Y axis pixel offset for dealing board
-          size={200} // card height in pixels
+          boardXoffset={125} // X axis pixel offset for dealing board
+          boardYoffset={100} // Y axis pixel offset for dealing board
+          size={100} // card height in pixels
         />
       </div>
     );
